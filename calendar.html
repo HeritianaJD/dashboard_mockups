@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar 2</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style1234.css">
+</head>
+<body>
+<div class="global">
+        <!-- Sidebar -->
+        <div class="container_sidebar w3-sidebar   w3-bar-block" style="width:18%">
+          <a class="link_dash_page" href="dashboard.html">
+            <div class="sidebar_tete">
+              <img src="imgs/logo_en_couleur.png" alt="">
+              <div class="text_logos">
+                <h3 class="w3-bar-item">Project name</h3>
+                <p>Category</p>
+              </div>
+            </div>
+          </a>
+            <div class="menu_sidebar ">
+              <ul>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple" src="imgs/four_squares.png" alt="">
+                  <img class="icone_white" src="imgs/square_white.png" alt="square_white">
+                  <a href="dashboard.html" class="w3-bar-item ">Dashboard</a>
+                </li>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple"  src="imgs/icons8-folder-50.png" alt="">
+                  <img class="icone_white" src="imgs/folder_white.png" alt="square_white">
+                  <a href="#" class="w3-bar-item  ">Projects</a>
+                </li>
+                <li style="background: #00BDD6FF;border-radius: 4px;" class="list_link_sidebar">
+                  <img src="imgs/calendar_white.png" alt="">
+                  <a style="color: white;" href="calendar.html" class="w3-bar-item  ">Calendar</a>
+                </li>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple" src="imgs/icons8-user-account-50.png" alt="">
+                  <img class="icone_white" src="imgs/user_account_white.png" alt="square_white">
+                  <a href="#" class="w3-bar-item  ">Teams</a>
+                </li>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple" src="imgs/Analystec.png" alt="">
+                  <img class="icone_white" src="imgs/Analytec_white-50.png" alt="square_white">
+                  <a href="#" class="w3-bar-item  ">Analytics</a>
+                </li>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple"  src="imgs/icons8-source-code-50.png" alt="">
+                  <img class="icone_white" src="imgs/code_white.png" alt="square_white">
+                  <a href="integration.html" class="w3-bar-item ">Integrations</a>
+                </li>
+                <li class="list_link_sidebar">
+                  <img class="icone_simple" src="imgs/icone_mesage.png" alt="">
+                  <img class="icone_white" src="imgs/message_white-32.png" alt="square_white">
+                  <a href="#" class="w3-bar-item  ">Messages</a>
+                </li>
+              </ul>
+            </div>
+            <div  class="container_sergey">
+              <img  src="imgs/sergey.png" alt="">
+              <div class="portf">
+                <h1>Sergey Goldberg</h1>
+                <p>company@example.com</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- ----------section calendar----------- -->
+          <div class="calendar">
+              <section id="section_1">
+                  <!-- header -->
+                  <header>
+                    <h1>Calendar</h1>
+                    <button class="create_button"><img src="imgs/icons8-plus-math-24.png" alt="">Creat new project</button>
+                  </header>
+                  <!-- main -->
+                  <main>
+                        <!-- calendar_1_section -->
+                      <div class="calendar_1_section">
+                        <div class="calendar_head">
+                            <div class="title_button">
+                                <h3>Dec, 2022</h3>
+                                <div class="three_button">
+                                    <a href="#"><img width="24px" height="24px" src="imgs/Caret left extra 4.png" alt="Icone_left_caret"></a>
+                                    <a href="#"><img width="24px" height="24px" src="imgs/Caret right extra 4.png" alt="Icone_right_caret"></a>
+                                    <button>Today</button>
+                                </div>
+                            </div>
+                            <div class="select_button">
+                                <form action="">
+                                    <select name="" id="">
+                                        <option value="">Day</option>
+                                    </select>
+                                </form>
+                                <button><img width="24px" height="24px" src="imgs/icone_day.png" alt="icon_img_button"></button>
+                            </div>
+                        </div>
+                        <div class="calendar_contenu">
+                            <div class="day_of_date">
+                                <p>Sat</p>
+                                <button class="background_white">3</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Sun</p>
+                                <button class="background_white">4</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Mon</p>
+                                <button class="background_blue">5</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Tu</p>
+                                <button class="background_blue">6</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Wed</p>
+                                <button class="background_blue">7</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Thu</p>
+                                <button class="background_blue">8</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Fri</p>
+                                <button style="background: #00BDD6FF;">9</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Sat</p>
+                                <button class="background_white">10</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Sun</p>
+                                <button class="background_white">11</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Mon</p>
+                                <button class="background_white">12</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Tu</p>
+                                <button class="background_white">13</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Wed</p>
+                                <button class="background_white">14</button>
+                            </div>
+                            <div class="day_of_date">
+                                <p>Thu</p>
+                                <button class="background_white">15</button>
+                            </div>
+                        </div>
+                      </div>
+                      <!--  time_1_section-->
+                      <div class="time_1_section">
+                        <!-- eight_time_about -->
+                        <div class="eight_time_about">
+                          <div class="line_eight_high">
+                            <p>08:00 AM</p>
+                            <div class="line_border"></div>
+                          </div>
+                          <div class="together_time_container">
+                            <div class="text_eight">
+                              <h4>Evenyt title</h4>
+                              <div class="metting_room">
+                                <p><img width="16px" src="imgs/Map pin 47.png" alt=""> 08:00 - 09:00 AM</p>
+                                <p><img width="16px" src="imgs/Clock 104.png" alt=""> Meeting room  09.002</p>
+                              </div>
+                            </div>
+                            <div class="image_eight">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/sergey.png" alt="Sergey Avatar">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2527.png" alt="Avatar 2535">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Elon_Melon.png" alt="Elon Melon">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2537.png" alt="Avatar 2537">
+                              <button>
+                                <img width="24px" src="imgs/Dots three vertical 73.png" alt="">
+                              </button>
+                            </div>
+                          </div>
+                          <div class="line_eight_down">
+                            <p>08:30 AM</p>
+                            <button></button>
+                            <hr>
+                          </div>
+                        </div>
+                        <!-- nine_time_about -->
+                        <div class="nine_time_about">
+                          <div class="line_nine_high">
+                              <p>09:00 AM</p>
+                              <div class="line_border"></div>
+                          </div>
+                          <div class="together_time_container">
+                            <div class="text_eight">
+                              <h4>Meeting title</h4>
+                              <div class="metting_room">
+                                <p><img width="16px" src="imgs/Map pin 47.png" alt=""> 09:00 - 09:30 AM</p>
+                                <p><img width="16px" src="imgs/Clock 104.png" alt=""> Meeting room  3.2</p>
+                              </div>
+                            </div>
+                            <div class="image_nine">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/sergey.png" alt="Sergey Avatar">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2527.png" alt="Avatar 2535">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Harrid_James.png" alt="James Harrid">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2529.png" alt="Avatar 2529">
+                              <button>
+                                <img width="24px" src="imgs/Dots three vertical 73.png" alt="">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- ten_time_about -->
+                        <div class="ten_time_about">
+                          <div class="line_ten_high">
+                              <p>10:00 AM</p>
+                              <div class="line_border"></div>
+                          </div>
+                          <div class="together_time_container">
+                            <div class="text_eight">
+                              <h4>Meeting title</h4>
+                              <div class="metting_room">
+                                <p><img width="16px" src="imgs/Map pin 47.png" alt=""> 10:00 - 11:30 AM</p>
+                                <p><img width="16px" src="imgs/Clock 104.png" alt=""> Meeting room  4.3</p>
+                              </div>
+                            </div>
+                            <div class="image_ten">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/sergey.png" alt="Sergey Avatar">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Kathryn.png" alt="Kathryn Morthy">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2537.png" alt="Avatar 2537">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Harrid_James.png" alt="James Harrid">
+                              <button>
+                                <img width="24px" src="imgs/Dots three vertical 73.png" alt="">
+                              </button>
+                            </div>
+                          </div>
+                          <div class="line_ten_down">
+                            <p>11:00 AM</p>
+                            <hr>
+                          </div>
+                        </div>
+                        <!-- eleven_time_about -->
+                        <div class="eleven_time_about">
+                          <div class="together_time_container">
+                            <div class="text_eight">
+                              <h4>Meeting title</h4>
+                              <div class="metting_room">
+                                <p><img width="16px" src="imgs/Map pin 47.png" alt=""> 11:30 - 12:00 AM</p>
+                                <p><img width="16px" src="imgs/Clock 104.png" alt=""> Meeting room  3.2</p>
+                              </div>
+                            </div>
+                            <div class="image_eleven">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/sergey.png" alt="Sergey Avatar">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2527.png" alt="Avatar 2535">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Harrid_James.png" alt="James Harrid">
+                              <img style="margin-left: -15px;" width="28px" src="imgs/Avatar 2529.png" alt="Avatar 2529">
+                              <button>
+                                <img width="24px" src="imgs/Dots three vertical 73.png" alt="">
+                              </button>
+                            </div>
+                          </div>
+                          <div class="line_eleven_down">
+                            <p>12:00 AM</p>
+                            <div class="line_border"></div>
+                          </div>
+                        </div>
+                      </div>
+                  </main>
+        
+              </section>
+              <!-- section_2 -->
+              <section id="section_2">
+                <!-- right_calendar -->
+                <div class="right_calendar">
+                  <div class="head_right_cal">
+                    <h3>Dec, 2022</h3>
+                    <div class="icons_cal">
+                      <img width="18px" height="18px" src="imgs/Caret left extra 4.png" alt="">
+                      <img width="18px" height="18px" src="imgs/Caret right extra 4.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid_right_cal">
+                    <div class="week_month">
+                      <button class="day_button">Mon</button>
+                      <button style="color: #9095A0FF;" class="left_date date_button">29</button>
+                      <button style="background: #C8F9FFFF;" class="date_button">5</button>
+                      <button class="date_button">12</button>
+                      <button class="date_button">19</button>
+                      <button class="date_button">26</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">Tue</button>
+                      <button style="color: #9095A0FF;" class="left_date date_button">30</button>
+                      <button style="background: #C8F9FFFF;" class="date_button">6</button>
+                      <button class="date_button">13</button>
+                      <button class="date_button">20</button>
+                      <button class="date_button">27</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">Wed</button>
+                      <button style="color: #9095A0FF;" class="left_date date_button">31</button>
+                      <button style="background: #C8F9FFFF;" class="date_button">7</button>
+                      <button class="date_button">14</button>
+                      <button class="date_button">21</button>
+                      <button class="date_button">28</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">Thu</button>
+                      <button class="date_button">1</button>
+                      <button style="background: #C8F9FFFF;"  class="date_button">8</button>
+                      <button class="date_button">15</button>
+                      <button class="date_button">22</button>
+                      <button class="date_button">29</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">Fri</button>
+                      <button class="date_button">2</button>
+                      <button style="background: #00BDD6FF; " class="date_button">9</button>
+                      <button class="date_button">16</button>
+                      <button class="date_button">23</button>
+                      <button class="date_button">30</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">Sat</button>
+                      <button class="date_button">3</button>
+                      <button class="date_button">10</button>
+                      <button class="date_button">17</button>
+                      <button class="date_button">24</button>
+                      <button class="date_button">31</button>
+                    </div>
+                    <div class="week_day">
+                      <button class="day_button">San</button>
+                      <button class="date_button">4</button>
+                      <button class="date_button">11</button>
+                      <button class="date_button">18</button>
+                      <button class="date_button">25</button>
+                      <button style="color: #9095A0FF;" class="next_date date_button">1</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- container_activity -->
+                <div class="container_activity">
+                  <div class="header_activity">
+                    <h1>Activities</h1>
+                    <button><img width="24px" height="24px" src="imgs/Dots three vertical 73.png" alt=""></button>
+                  </div>
+                  <div class="content_activity">
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Kathryn.png" alt="">
+                      <div>
+                        <h3>Kathryn Murphy</h3>
+                        <p>In eu do do cillum lorem exerci kea dolor.</p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Harrid_James.png" alt="">
+                      <div>
+                        <h3>James Harrid</h3>
+                        <p>Deserunt minim indidunt cillum nostrudo. </p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Elon_Melon.png" alt="">
+                      <div>
+                        <h3>Elon Melon</h3>
+                        <p>Tempor labore consectetur minim est consequat</p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Mia_Smith.png" alt="">
+                      <div>
+                        <h3>Mia Smith</h3>
+                        <p>Cupidatat eiusmod tempor labor amet a </p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/james_doe.png" alt="">
+                      <div>
+                        <h3>James Doe</h3>
+                        <p>Duis exepteur enim enim dolore aliqua</p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Elon_Melon.png" alt="">
+                      <div>
+                        <h3>Elon Melon</h3>
+                        <p>Tempor labore consectetur minim est consequat</p>
+                      </div>
+                    </div>
+                    <div class="people_act">
+                      <img width="36px" height="36px" src="imgs/Harrid_James.png" alt="">
+                      <div>
+                        <h3>James Harrid</h3>
+                        <p>Deserunt minim indidunt cillum nostrudo. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          </div>        
+</div>
+</body>
+</html>
