@@ -325,6 +325,11 @@
     margin-right: 6px;
 }
 
+.header_dash .header_button .image_menu{
+    width: 44px;
+    display: none;
+}
+
 /* ***************detail du page******************** */
 .main_dash{
     margin-left: 18%;
@@ -413,6 +418,25 @@
     color: #9095A0FF;
 }
 
+/* .stat_block_none */
+.main_dash #section_1 .data_and_stat .stat_block_none{
+    display: none;
+}
+.main_dash #section_1 .data_and_stat .stat_text_block h1{
+    font-family: 'Epilogue';
+    font-size: 16px;
+}
+.main_dash #section_1 .data_and_stat .stat_text_block{
+    display: flex;
+    justify-content: space-between;
+}
+.main_dash #section_1 .data_and_stat .stat_text_block select{
+    background: #F3F4F6FF;
+    border: none;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: 12px;
+}
 /* container_activitie */
 .main_dash #section_1 .container_activitie{
     max-width: 30%;
@@ -475,16 +499,72 @@
     margin-top: 8px;
     margin-right: 14px;
 }
-
-/*** section_2 ***/
-.main_dash #section_2{
+/* **********activitie none************ */
+.main_dash .container_activitie .activitie_none h1{
+    font-size: 16px;
+    font-family: 'Epilogue';
+    color: #171A1FFF;
+}
+.main_dash .container_activitie .activitie_none .header_act_none{
     display: flex;
     justify-content: space-between;
 }
+.main_dash .container_activitie .activitie_none .header_act_none p{
+    color: #9095A0FF;
+    font-size: 14px;
+    font-family: 'Inter';
+}
+.main_dash .container_activitie .container_act_none{
+    display: none;
+}
+.main_dash .container_activitie .content_act_none{
+    border: 1px solid #DEE1E6FF;
+    padding: 16px;
+    border-radius: 4px;
+}
+.main_dash .container_activitie .content_act_none img{
+    width: 44px;
+    height: 44px;
+}
+.main_dash .container_activitie .content_act_none .act_list_houre{
+    display: flex;
+    justify-content: space-between;
+}
+.main_dash .container_activitie .content_act_none .act_list_houre .act_list_none{
+    display: flex;
+    gap: 10px;
+}
+.main_dash .container_activitie .content_act_none .act_list_houre h4{
+    font-size: 12px;
+    font-family: 'Inter';
+    color: #171A1FFF;
+    margin-top: 0;
+}
+.main_dash .container_activitie .content_act_none .act_list_houre p{
+    font-size: 11px;
+    font-family: 'Inter';
+    color: #323842FF;
+    margin: 0;
+}
+.main_dash .container_activitie .content_act_none .act_list_houre .houre{
+    color: #9095A0FF;
+    font-size: 12px;
+    font-family: 'Inter';
+}
+
+/*** section_2 ***/
+.main_dash #section_2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+}
 /* container order */
 .main_dash #section_2 .container_order{
+    width: 100%;
     margin-top: 20px;
-    width: 70%;
+}
+.main_dash #section_2 .container_order table{
+    width: 100%;
 }
 .main_dash .container_order h1{
     font-size: 18px;
@@ -493,33 +573,35 @@
     margin-top: 0;
     margin-bottom: 27px;
 }
-.main_dash .container_order .content_recent_order{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.main_dash .content_recent_order{
     border: 1px solid #F3F4F6FF;
     border-radius: 4px;
 }
-.main_dash .content_recent_order h4{
+.main_dash .content_recent_order th{
     font-size: 14px;
     color: #565E6CFF;
     background-color: #FAFAFBFF;
     font-family: 'Epilogue';
     margin: 0;
     padding: 14px;
+    text-align: start;
 }
-.main_dash .content_recent_order p{
+.main_dash .content_recent_order td{
     font-size: 14px;
     font-family: 'Inter';
     color: #171A1FFF;
     margin: 0;
     padding: 14px;
 }
-.main_dash .content_recent_order button{
+.main_dash .content_recent_order .button{
     font-size: 11px;
     padding: 6px 12px 6px 12px!important;
     border-radius: 19px;
     border: none;
-    margin: 10px;
+}
+.main_dash .content_recent_order .icone{
+    background-color: white;
+    border: none;
 }
 .main_dash .content_recent_order .button_new{
     background: #F0F8FEFF;
@@ -529,9 +611,49 @@
     background: #F0F8FEFF;
     color: #117B34FF
 }
+/* container order none*/
+.container_order .container_order_none{
+    display: none;
+}
+.container_order .content_order_none .img_and_parg_order img{
+    margin-right: 12px;
+}
+.container_order .content_order_none hr{
+    margin: 0;
+}
+.container_order .content_order_none{
+    border: 1px solid #DEE1E6FF;
+    border-radius: 4px;
+    padding: 0 12px 0 12px;
+}
+.container_order .content_order_none .list_order_none{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0 12px 0;
+}
+.container_order .content_order_none .list_order_none .img_and_parg_order{
+    display: flex;
+}
+.container_order .content_order_none .list_order_none .img_and_parg_order p{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Inter';
+    color: #171A1FFF;
+}
+.container_order .content_order_none .img_and_parg_order em{
+    color: rgb(183, 190, 204);
+    font-style: normal;
+}
+.container_order .content_order_none .list_order_none button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
 /* container segment */
-.main_dash #section_2 .container_segment{
-    width: 28%;
+.main_dash #section_2 .container_segment {
+    width: 94%;
+}
+.main_dash #section_2 .container_segment .content_segment{
     border: 1px solid #F3F4F6FF;
     padding: 20px;
     margin-top: 20px;
@@ -554,7 +676,7 @@
     width: 100%;
 }
 
-/* *******************************************************************Calendaer****************************************************************************** */
+/* *******************************************************************Calendar****************************************************************************** */
 /* ****************section calendar******************* */
 .calendar{
     margin-left: 18%;
@@ -1253,6 +1375,33 @@
 /* +++********************************************************Responsive******************************************************************************************* */
 @media only screen and (max-width: 1116px){
 
+    /* ************Dashboard********** */
+    .main_dash #section_1{
+        gap: 10px;
+    }
+    .main_dash #section_2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -190px;
+    }
+    .main_dash #section_2 .container_segment {
+        width: 70%;
+    }
+    .main_dash #section_2 .container_segment img{
+        width: 40%;
+    }
+    .main_dash #section_2 .container_segment h1{
+        font-size: 14px;
+    }
+    .main_dash #section_2 .container_segment p{
+        font-size: 10px;
+    }
+    .main_dash #section_2 .container_order{
+        margin-top: 0;
+    }
+    .main_dash #section_1 .container_activitie{
+        padding: 17px 10px;
+    }
     /* ********Setting integrations******** */
     .sidebar_tete img{
         width: 30px;
@@ -1308,6 +1457,39 @@
         height: 460px;
     }
 
+    /* ********Dashboard********* */
+    .main_dash #section_1{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .main_dash #section_1 .data_and_stat{
+        max-width: 100%;
+    }
+    .main_dash #section_1 .container_activitie{
+        max-width: 100%;
+    }
+    .main_dash #section_2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .main_dash #section_2 .container_order{
+        margin-top: 20px;
+    }
+    .main_dash #section_2 .container_segment img{
+        width: 40%;
+    }
+    .main_dash #section_2 .container_segment {
+        width: 100%;
+    }
+    .main_dash #section_2 .container_segment .content_segment{
+        margin-top: 0;
+    }
+
+    .main_dash .container_activitie .header_act img {
+        top: 695px;
+    }
+
     /* ********Setting integrations******** */
     #section_integ1 .text_utilisation h2{
         font-size: 14px;
@@ -1335,6 +1517,10 @@
     .header{
         margin-left: 0!important;
     }
+    .header_dash{
+        margin-left: 0;
+    }
+    
     .main_dash{
         flex-direction: column;
         margin-left: 0;
@@ -1342,9 +1528,32 @@
     .main_dash #section_2{
         max-width: 100%;
     }
-    .main_dash #section_2 .container_segment{
+    .main_dash #section_1 .container_activitie{
+        border: none;
+        padding: 0;
+    }
+    .main_dash #section_1 .container_activitie .activitie_block{
         display: none;
     }
+    .main_dash .container_activitie .container_act_none{
+        display: block;
+    }
+    
+    .main_dash .container_order h1{
+        margin-bottom: 6px;
+        color: #171A1FFF;
+        font-size: 16px;
+    }
+    .main_dash .content_recent_order{
+        display: none;
+    }
+    .container_order .container_order_none{
+        display: block;
+    }
+    .main_dash #section_2 .container_segment img{
+        width: 340px;
+    }
+    
      /* ********Setting integrations******** */
      .container_sidebar{
         display: none;
@@ -1352,10 +1561,6 @@
     #section_integ1, #section_integ2{
         margin-left: 0!important;
     }
-    .container_network .learn_more p{
-
-    }
-
     .sidebar_menu_bottom{
         display: block;
     }
@@ -1418,8 +1623,22 @@
 
 @media only screen and (max-width: 576px){
     /* ***************Dashboard********** */
+    .header_dash{
+        align-items: center;
+        padding: 20px;
+    }
+    .header_dash .header_button .image_menu{
+        display: block;
+    }
     .main_dash #section_2 .container_segment{
         display: block;
+    }
+    .header_dash h1{
+        font-size: 20px;
+    }
+
+    .header_dash .two_button_header{
+        display: none;
     }
 
     .data_and_stat .container_data{
@@ -1432,9 +1651,24 @@
     .data_and_stat .container_statistic{
         display: none;
     }
-    .stat_block_none{
+    .main_dash #section_1 .data_and_stat .stat_block_none{
         display: block;
     }
+
+    .data_and_stat .container_stat{
+        display: none;
+    }
+
+    .container_order .content_order_none .list_order_none .img_and_parg_order p{
+        font-size: 14px;
+    }
+    .main_dash .container_activitie .content_act_none .act_list_houre h4{
+        font-size: 14px;
+    }
+    .main_dash .container_activitie .content_act_none .act_list_houre p{
+        font-size: 11px;
+    }
+
     /* ********Setting integrations******** */
     .prev_icone_title button{
         display: block;
@@ -1463,7 +1697,10 @@
     }
 }
 @media only screen and (max-width: 440px){
-
+    /**************** dashboard******** */
+    .main_dash #section_2 .container_segment img{
+        width: 100%;
+    }
     /* ********Setting integrations******** */
     .sidebar_footer a p{
         font-size: 10px;
@@ -1473,6 +1710,19 @@
     }
 }
 @media only screen and (max-width: 420px){
+    /* *************dashboard************ */
+    .main_dash .container_activitie .content_act_none .act_list_houre h4{
+        font-size: 12px;
+    }
+    .main_dash .container_activitie .content_act_none .act_list_houre p{
+        font-size: 10px;
+    }
+    .main_dash .container_activitie .content_act_none .act_list_houre .houre{
+        font-size: 11px;
+    }
+    .container_order .content_order_none .list_order_none .img_and_parg_order p{
+        font-size: 12px;
+    }
     /* ***********Registration********** */
     .div_logo .image{
         top: 24px;
@@ -1510,7 +1760,20 @@
     }
 }
 @media only screen and (max-width: 350px){
+    /* *********dashboard******* */
+    .main_dash {
+        padding: 5px 10px 20px 10px;
+    }
+    .header_dash {
+        padding: 10px;
+    }
 
+    .main_dash .container_activitie .content_act_none{
+        padding: 6px;
+    }
+    .container_order .content_order_none {
+        padding: 0 6px 0 6px;
+    }
     /* ********Setting integrations******** */
     .container_network .content_network p{
         font-size: 10px;
@@ -1540,6 +1803,19 @@
     }
 }
 @media only screen and (max-width: 300px){
+    /* dashboard */
+    .header_dash{
+        padding: 10px;
+    }
+    .main_dash {
+        padding: 5px 10px 20px 10px;
+    }
+    .data_and_stat .container_data .label_d{
+        padding: 6px 5px;
+    }
+    .container_data .label_d h1{
+        font-size: 24px;
+    }
 
     /* ********Setting integrations******** */
     .sidebar_footer img {
@@ -1553,6 +1829,14 @@
     /* ***********Registration********** */
     .div_logo .image{
         top: 18px;
+    }
+    /* ********dashboard********* */
+    .main_dash .container_activitie .content_act_none .act_list_houre h4{
+        margin: 0;
+    }
+    .main_dash .container_activitie .content_act_none img {
+        width: 34px;
+        height: 34px;
     }
 }
 @media only screen and (max-width: 250px){

@@ -70,8 +70,11 @@
     <header class="header_dash">
         <h1>Dashboard</h1>
         <div class="header_button">
-          <button class="create_button"><img src="imgs/icons8-plus-math-24.png" alt="">Creat new project</button>
-          <button class="blue_button"><img src="imgs/icons8-share-48.png" alt="">Share</button>
+          <div class="two_button_header">
+            <button class="create_button"><img src="imgs/icons8-plus-math-24.png" alt="">Creat new project</button>
+            <button class="blue_button"><img src="imgs/icons8-share-48.png" alt="">Share</button>
+          </div>
+          <img class="image_menu" src="imgs/menu_button.png" alt="">
         </div>
     </header>
     <!-- main -->
@@ -130,59 +133,111 @@
                         <div class="chiffre_1-12">12</div>
                     </div>
                 </div>
+                <!-- -----stat_block_none------- -->
+                <div class="stat_block_none">
+                    <div class="stat_text_block">
+                      <h1>Statistics</h1>
+                      <form action="">
+                        <select name="date" id="date">
+                          <option value="date">2022</option>
+                          <option value="date">2023</option>
+                          <option value="date">2024</option>
+                          <option value="date">2025</option>
+                          <option value="date">2026</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div">
+                      <img width="100%" src="imgs/Column bar chart-2.png" alt="">
+                    </div>
+                  </div>
             </div>
             <!-- container activitie -->
             <div class="container_activitie">
-                <div class="header_act">
-                    <div>
-                        <h1>Activities</h1>
+                <!-- activitie block -->
+                <div class="activitie_block">
+                    <div class="header_act">
+                        <div>
+                            <h1>Activities</h1>
+                        </div>
+                        <div>
+                            <img src="imgs/icons8-calendar-act.png" alt="">
+                            <select name="" id="">
+                                <option value=""> Monthly</option>
+                                <option value="date">2022</option>
+                                <option value="date">2023</option>
+                                <option value="date">2024</option>
+                                <option value="date">2025</option>
+                                <option value="date">2026</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <img src="imgs/icons8-calendar-act.png" alt="">
-                        <select name="" id="">
-                            <option value=""> Monthly</option>
-                            <option value="date">2022</option>
-                            <option value="date">2023</option>
-                            <option value="date">2024</option>
-                            <option value="date">2025</option>
-                            <option value="date">2026</option>
-                        </select>
+                    <div class="content_act">
+                        <div class="act_list">
+                            <img width="42px" height="42px" src="imgs/Kathryn.png" alt="">
+                            <div>
+                                <h3>Kathryn Murphy</h3>
+                                <p>ln eu do do cillum lorem exercitation ea dolor.</p>
+                            </div>
+                        </div>
+                        <div class="act_list">
+                            <img width="42px" height="42px" src="imgs/Harrid_James.png" alt="">
+                            <div>
+                                <h3>James Harid</h3>
+                                <p>Deserunt minim indidunt cillum nostrudo voluptate excepteur.</p>
+                            </div>
+                        </div>
+                        <div class="act_list">
+                            <img width="42px" height="42px" src="imgs/Elon_Melon.png" alt="">
+                            <div>
+                                <h3>Elon Melon</h3>
+                                <p>Mollit consectetur occaecat et ad adipisicing ex deserunt fugiat.</p>
+                            </div>
+                        </div>
+                        <div class="act_list">
+                            <img width="42px" height="42px" src="imgs/Mia_Smith.png" alt="">
+                            <div>
+                                <h3>Mia Smith</h3>
+                                <p>Cupidatat eiusm d tempor labore amet amet proid nt duis.</p>
+                            </div>
+                        </div>
+                        <div class="act_list">
+                            <img width="42px" height="42px" src="imgs/james_doe.png" alt="">
+                            <div>
+                                <h3>James Doe</h3>
+                                <p>Duis excepteur enim enim dolore aliqua officia nisi labore ipsum. </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="content_act">
-                    <div class="act_list">
-                        <img width="42px" height="42px" src="imgs/Kathryn.png" alt="">
-                        <div>
-                            <h3>Kathryn Murphy</h3>
-                            <p>ln eu do do cillum lorem exercitation ea dolor.</p>
+                <!-- activitie none -->
+                <div class="activitie_none">
+                    <div class="container_act_none">
+                        <div class="header_act_none">
+                            <h1>Activities</h1>
+                            <p>See all</p>
                         </div>
-                    </div>
-                    <div class="act_list">
-                        <img width="42px" height="42px" src="imgs/Harrid_James.png" alt="">
-                        <div>
-                            <h3>James Harid</h3>
-                            <p>Deserunt minim indidunt cillum nostrudo voluptate excepteur.</p>
-                        </div>
-                    </div>
-                    <div class="act_list">
-                        <img width="42px" height="42px" src="imgs/Elon_Melon.png" alt="">
-                        <div>
-                            <h3>Elon Melon</h3>
-                            <p>Mollit consectetur occaecat et ad adipisicing ex deserunt fugiat.</p>
-                        </div>
-                    </div>
-                    <div class="act_list">
-                        <img width="42px" height="42px" src="imgs/Mia_Smith.png" alt="">
-                        <div>
-                            <h3>Mia Smith</h3>
-                            <p>Cupidatat eiusm d tempor labore amet amet proid nt duis.</p>
-                        </div>
-                    </div>
-                    <div class="act_list">
-                        <img width="42px" height="42px" src="imgs/james_doe.png" alt="">
-                        <div>
-                            <h3>James Doe</h3>
-                            <p>Duis excepteur enim enim dolore aliqua officia nisi labore ipsum. </p>
+                        <div class="content_act_none">
+                            <div style="margin-bottom: 15px;" class="act_list_houre">
+                                <div class="act_list_none">
+                                    <img src="imgs/Jane.png" alt="">
+                                    <div>
+                                        <h4>Jane Cooper</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="houre">12:00 PM</div>
+                            </div>
+                            <div class="act_list_houre">
+                                <div class="act_list_none">
+                                    <img src="imgs/Avatar 2529.png" alt="">
+                                    <div>
+                                        <h4>James Hariid</h4>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="houre">11:37 PM</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,55 +247,125 @@
         <section id="section_2">
             <!-- container order -->
             <div class="container_order">
-                <div>
                     <h1>Recent Orders</h1>
                     <div class="content_recent_order">
-                        <div>
-                            <h4>Product</h4>
-                            <p>Product name</p>
-                            <p>Product name</p>
-                            <p>Product name</p>
-                        </div>
-                        <div>
-                            <h4>Price</h4>
-                            <p>300</p>
-                            <p>300</p>
-                            <p>500</p>
-                        </div>
-                        <div>
-                            <h4>Quality</h4>
-                            <p>2</p>
-                            <p>3</p>
-                            <p>2</p>
-                        </div>
-                        <div>
-                            <h4>Amount</h4>
-                            <p>$500</p>
-                            <p>$900</p>
-                            <p>$1000</p>
-                        </div>
-                        <div>
-                            <h4>Status</h4>
-                            <button class="button_new">New</button>
-                            <button class="button_delivred" style="background: #F0F8FEFF;color: #117B34FF">Delivred</button>
-                            <button class="buton_new" style="background: #F0F8FEFF;color: #1091F4FF;">New</button>
-                        </div>
-                        <div>
-                            <h4 style="padding: 24.5px;"></h4>
-                            <p style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></p>
-                            <p style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></p>
-                            <p style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></p>  
-                        </div>                          
+                        <table>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Product name</td>
+                                <td>300</td>
+                                <td>2</td>
+                                <td>$600</td>
+                                <td><button class="buton_new button" style="background: #F0F8FEFF;color: #1091F4FF;">New</button></td>
+                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>
+                            </tr>
+                            <tr>
+                                <td>Product name</td>
+                                <td>300</td>
+                                <td>3</td>
+                                <td>$900</td>
+                                <td><button class="button_delivred button" style="background: #F0F8FEFF;color: #117B34FF">Delivred</button></td>
+                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>
+                            </tr>
+                            <tr>
+                                <td>Product name</td>
+                                <td>500</td>
+                                <td>2</td>
+                                <td>$1000</td>
+                                <td><button class="buton_new button" style="background: #F0F8FEFF;color: #1091F4FF;">New</button></td>
+                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>  
+                            </tr>                          
+                        </table>
                     </div>
-                </div>
+                    <!-- container_order_none -->
+                    <div class="container_order_none">
+                        <div class="content_order_none">
+                            <div class="list_order_none">
+                                <div class="img_and_parg_order">
+                                    <img width="24px" height="24px" src="imgs/Receipt_3.png" alt="">
+                                    <p>6 orders <em>to fulfill</em></p>
+                                </div>
+                                <button>
+                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="list_order_none">
+                                <div class="img_and_parg_order">
+                                    <img width="24px" height="24px" src="imgs/Clipboard_text5.png" alt="Clipboard_text">
+                                    <p>20 orders <em>on delivery</em></p>
+                                </div>
+                                <button>
+                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="list_order_none">
+                                <div class="img_and_parg_order">
+                                    <img width="24px" height="24px" src="imgs/Credit_card_6.png" alt="Credit_card">
+                                    <p>99 payments <em>to capture</em></p>
+                                </div>
+                                <button>
+                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="list_order_none">
+                                <div class="img_and_parg_order">
+                                    <img width="24px" height="24px" src="imgs/Clipboard_text-6.png" alt="Clipboard_text">
+                                    <p>1 chargeback <em>to review</em></p>
+                                </div>
+                                <button>
+                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
             </div>
             <!-- container segment -->
             <div class="container_segment">
-                <div>
+                <div class="content_segment">
                     <h1>Statistics</h1>
                     <p>From 1-15 June, 2022</p>
                     <img  src="imgs/Pie chart 3.png" alt="Pie_Chart">
                 </div>
+            </div>
+        </section>
+        <!-- sidebar_menu_bottom -->
+        <section class="sidebar_menu_bottom">
+            <div class="sidebar_footer">
+                <a href="dashboard.html">
+                    <img class="image_simple" src="imgs/icons8-four-squares-blue.png" alt="link-dashboard-footer">
+                    <img class="image_hover_blue" src="imgs/icons8-four-squares-blue.png" alt="link-dashboard-footer-hover">
+                    <p style="color: #00BDD6FF;">Dashboard</p>
+                </a>
+                <a href="calendar.html">
+                    <img class="image_simple" src="imgs/icons8-calendar-footer.png" alt="link-calendar-footer">
+                    <img class="image_hover_blue" src="imgs/icons8-calendar-blue.png" alt="link-calendar-footer-hover">
+                    <p>Calendar</p>
+                </a>
+                <a href="#">
+                    <img class="image_simple" src="imgs/icons8-user-account-50.png" alt="link-team-footer">
+                    <img class="image_hover_blue" src="imgs/user_acount_blue.png" alt="link-team-footer-hover">
+                    <p>Teams</p>
+                </a>
+                <a href="#">
+                    <img class="image_simple" src="imgs/icone_mesage.png" alt="link-message-footer">
+                    <img class="image_hover_blue" src="imgs/icons8-typing-24-message-blue.png" alt="link-message-footer-hover">
+                    <p>Messages</p>
+                </a>
+                <a href="integration.html">
+                    <img class="image_simple" src="imgs/icons8-setting-24.png" alt="link-setting-footer">
+                    <img class="image_hover_blue" src="imgs/icons8-setting-blue.png" alt="link-setting-footer-hover">
+                    <p>Setting</p>
+                </a>
             </div>
         </section>
     </main>
