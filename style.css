@@ -1667,6 +1667,9 @@
     #header_integ, #main_integ{
         margin-left: 0!important;
     }
+    #main_integ{
+        margin-bottom: 70px!important;
+    }
     /* .sidebar_footer */
     .sidebar_menu_bottom{
         display: block!important;
@@ -1808,8 +1811,8 @@
     
     #main_integ {
         padding: 0 20px 0px 20px;
+        margin-bottom: 100px!important;
     }
-
     /* .sidebar_footer */
     .sidebar_footer img{
         width: 25px;
