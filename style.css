@@ -676,30 +676,27 @@
     width: 100%;
 }
 
+
 /* *******************************************************************Calendar****************************************************************************** */
 /* ****************section calendar******************* */
-.calendar{
+.section1_section2_calendar{
     margin-left: 18%;
     display: grid;
-    grid-template-columns: 68% 30%;
-    padding: 25px;
+    grid-template-columns: 70% 30%; 
     gap: 18px;
+    padding: 30px 30px 0 25px;
 }
-
-/* -------------section_1 */
-.calendar #section_1 header{
+.section1_section2_calendar #section_1 .header_section1{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
 }
-
-.calendar header h1{
+.section1_section2_calendar #section_1 .header_section1 h1{
     font-size: 24px;
     font-family: 'Epilogue';
     color: #171A1FFF;
     margin: 0;
 }
-.calendar header .create_button{
+.section1_section2_calendar #section_1 .header_section1 .create_button{
     color: #FFFFFFFF;
     background: #00BDD6FF;
     font-size: 12px;
@@ -708,33 +705,33 @@
     font-family: 'Inter';
     padding: 10px;
 }
-.calendar header .create_button img{
+.section1_section2_calendar #section_1 .header_section1 .create_button img{
     height: 16px;
     width: 16px;
     margin-right: 6px;
 }
 /* calendar_1_section */
-.calendar_1_section{
+.section1_section2_calendar #section_1 .calendar_1_section{
     margin-bottom: 30px;
 }
-.calendar_1_section .calendar_head{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head{
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
 }
 
-.calendar_head .title_button{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head .title_button{
     display: flex;
     gap: 40px;
 }
 
-.calendar .title_button h3{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head .title_button h3{
     margin: 5px 0 0 0;
     color: #565E6CFF;
     font-size: 16px;
     font-family: 'Epilogue';
 }
-.calendar .title_button .three_button button{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head .title_button .three_button button{
     color: #006D7CFF;
     background: #C8F9FFFF;
     font-size: 12px;
@@ -744,10 +741,10 @@
     font-family: 'Inter';
 }
 
-.calendar_head .select_button{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head .select_button{
     display: flex;
 }
-.calendar_head .select_button select{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_head .select_button select{
     border-radius: 4px;
     font-family: 'Inter';
     border: none;
@@ -759,20 +756,20 @@
     border-radius: 6px;
     font-size: 14px;
 }
-.select_button button{
+.section1_section2_calendar #section_1 .calendar_1_section .select_button button{
     border: none;
     border-radius: 4px;
     margin-left: 8px;
 }
 
 /* calendar_contenu */
-.calendar_1_section .calendar_contenu{
+.section1_section2_calendar #section_1 .calendar_1_section .calendar_contenu{
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
 }
 
-.calendar_1_section .day_of_date p{
+.section1_section2_calendar #section_1 .calendar_1_section .day_of_date p{
     margin: 0;
     color: #9095A0FF;
     font-size: 12px;
@@ -781,7 +778,7 @@
     text-align: center;
 }
 
-.calendar_1_section .day_of_date button{
+.section1_section2_calendar #section_1 .calendar_1_section .day_of_date button{
     border-radius: 18px;
     padding: 2px 8px;
     border: none;
@@ -790,13 +787,12 @@
     color: #323842FF;
 }
 
-.calendar_1_section .day_of_date .background_white{
+.section1_section2_calendar #section_1 .calendar_1_section .day_of_date .background_white{
     background-color: white;
 }
-.calendar_1_section .day_of_date .background_blue{
+.section1_section2_calendar #section_1 .calendar_1_section .day_of_date .background_blue{
     background: #EBFDFFFF;
 }
-
 
 /* ********time_1_section******** */
 /* eight_time_about */
@@ -806,47 +802,64 @@
     align-items: center;
     gap: 8px;
 }
-.eight_time_about .line_eight_high p{
-    font-size: 12px;
-    font-family: 'Inter';
-    color: #9095A0FF;
-    margin: 0;
-}
-.eight_time_about .line_eight_high  hr {
-    flex: 1;
-    border: none;
-    height: 1px;
-    background: #DEE1E6FF;
-    margin: 0;
-}
-
-.eight_time_about .line_eight_down{
+/* line_eight_down */
+.time_1_section .eight_time_about .line_eight_down{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.eight_time_about .line_eight_down p{
+.time_1_section .eight_time_about .line_eight_down p{
     font-size: 12px;
     font-family: 'Inter';
     color: #00BDD6FF;
     margin: 0;
 }
-.eight_time_about .line_eight_down hr{
+.time_1_section .eight_time_about .line_eight_down hr{
     flex: 1;
     border: none;
     height: 1px;
     background: #00BDD6FF;
     margin: 0;
 }
-.eight_time_about .line_eight_down button{
+.time_1_section .eight_time_about .line_eight_down button{
     padding: 5px;
     background-color: #00BDD6FF;
     border: none;
     border-radius: 5px;
     margin-left: 8px;
 }
-
-.together_time_container{
+/*  image_line*/
+.time_1_section .together_time_container .image_line img{
+    margin-left: -15px;
+    width: 28px;
+}
+/* line_text_border */
+.time_1_section .line_text_border hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    margin: 0;
+}
+.time_1_section .line_text_border p{
+    font-size: 12px;
+    font-family: 'Inter';
+    color: #9095A0FF;
+    margin: 0;
+}
+/* line_text_border */
+.time_1_section .line_text_border{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.time_1_section .line_border{
+    width: 90%;
+    border: 1px solid;
+    border-style: dashed;
+    color: #DEE1E6FF;
+}
+/* together_time_container */
+.time_1_section .together_time_container{
     display: flex;
     justify-content: space-between;
     margin-left: 70px;
@@ -854,166 +867,63 @@
     padding: 18px;
     background-color: #F8F9FAFF;
 }
-
-.together_time_container .text_eight h4{
+.time_1_section .together_time_container .text_together h4{
     color: #171A1FFF;
     font-size: 14px;
     font-family: 'Inter';
     margin: 0;
 }
-.together_time_container .text_eight p{
+.time_1_section .together_time_container .text_together p{
     font-size: 12px;
     font-family: 'Inter';
     color: #6E7787FF;
     margin: 0;
 }
-.text_eight .metting_room{
+.time_1_section .together_time_container .text_together .metting_room{
     display: flex;
     gap: 15px;
 }
 
-.together_time_container .image_eight button{
+.time_1_section .together_time_container .image_eight button{
     margin-left: 8px;
     padding: 0;
     background-color: #F8F9FAFF;
     border: none;
 }
-
-/* nine_time_about */
-.time_1_section .nine_time_about{
+.time_1_section .together_time_container .image_line button{
+    margin-left: 20px;
+    padding: 0;
+    background-color: #F8F9FAFF;
+    border: none;
+}
+.time_1_section .nine_time_about, .ten_time_about, .eleven_time_about{
     margin-top: 70px;
 }
-
-.time_1_section .nine_time_about .line_nine_high{
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-.line_nine_high p{
-    font-size: 12px;
-    font-family: 'Inter';
-    color: #9095A0FF;
-    margin: 0;
-}
-.line_nine_high hr{
-    flex: 1;
-    border: none;
-    height: 1px;
-    background: #DEE1E6FF;
-    margin: 0;
-}
-
-.together_time_container .image_nine button{
-    margin-left: 8px;
-    padding: 0;
-    background-color: #F8F9FAFF;
-    border: none;
-}
-
 /* ten time about */
 .ten_time_about .together_time_container{
     padding: 18px 18px 100px 18px;
 }
-
-.time_1_section .ten_time_about{
-    margin-top: 70px;
-}
-
-.time_1_section .ten_time_about .line_ten_high{
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-.line_ten_high p{
+.ten_time_about .line_down p{
+    margin: 0;
     font-size: 12px;
     font-family: 'Inter';
     color: #9095A0FF;
-    margin: 0;
 }
-.line_ten_high hr{
-    flex: 1;
-    border: none;
-    height: 1px;
-    background: #DEE1E6FF;
-    margin: 0;
-}
-
-.together_time_container .image_ten button{
-    margin-left: 8px;
-    padding: 0;
-    background-color: #F8F9FAFF;
-    border: none;
-}
-
-.ten_time_about .line_ten_down{
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-.line_ten_down p{
-    font-size: 12px;
-    font-family: 'Inter';
-    color: #9095A0FF;
-    margin: 0;
-}
-.line_ten_down hr{
-    flex: 1;
-    border: none;
-    height: 1px;
-    margin: 0;
-}
-
-/* eleven_time_about */
-.time_1_section  .eleven_time_about{
-    margin-top: 70px;
- }
-
-
-.together_time_container .image_eleven button{
-    margin-left: 8px;
-    padding: 0;
-    background-color: #F8F9FAFF;
-    border: none;
-}
-
-.eleven_time_about .line_eleven_down{
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-.line_eleven_down p{
-    font-size: 12px;
-    font-family: 'Inter';
-    color: #9095A0FF;
-    margin: 0;
-}
-.line_eleven_down hr{
-    flex: 1;
-    border: none;
-    height: 1px;
-    background: #DEE1E6FF;
-    margin: 0;
-}
-
 /* ++++++section_2++++++ */
 /* right_calendar */
-.calendar #section_2 .right_calendar{
+.section1_section2_calendar #section_2 .right_calendar{
     padding: 15px;
     background: #FAFAFBFF;
     border-radius: 8px;
 }
 
-.calendar #section_2 .right_calendar .head_right_cal{
+.section1_section2_calendar #section_2 .head_right_cal{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-.head_right_cal h3{
+.section1_section2_calendar #section_2  .head_right_cal h3{
     color: #171A1FFF;
     font-size: 16px;
     font-family: 'Epilogue';
@@ -1021,7 +931,7 @@
 }
 
 /* grid_right_cal */
-.calendar #section_2 .right_calendar .grid_right_cal{
+.section1_section2_calendar #section_2 .right_calendar .grid_right_cal{
     display: flex;
     justify-content: space-between;
 }
@@ -1052,54 +962,53 @@
 }
 
 /* container_activity */
- .calendar #section_2 .container_activity{
+.section1_section2_calendar #section_2 .container_activity{
     border: 1px solid #F3F4F6FF;
     border-radius: 8px;
     padding: 15px;
     margin-top: 15px;
 }
 
-.calendar #section_2 .container_activity .header_activity{
+.section1_section2_calendar #section_2 .container_activity .header_activity{
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
 }
-.container_activity .header_activity h1{
+.section1_section2_calendar #section_2 .container_activity .header_activity h1{
     font-size: 18px;
     font-family: 'Epilogue';
     color: #171A1FFF;
     margin: 0;
 }
-.container_activity .header_activity button{
+.section1_section2_calendar #section_2 .container_activity .header_activity button{
     border: none;
     background-color: white;
 }
 
 
-.container_activity .content_activity {
+.section1_section2_calendar #section_2 .container_activity .content_activity {
     display: grid;
     row-gap: 12px;
 }
-.container_activity .content_activity .people_act{
+.section1_section2_calendar #section_2 .container_activity .content_activity .people_act{
     display: flex;
     gap: 10px;
     background: #FAFAFBFF;
     border-radius: 8px;
     padding: 12px;
 }
-.content_activity .people_act h3{
+.section1_section2_calendar #section_2 .content_activity .people_act h3{
     font-size: 12px;
     color: #171A1FFF;
     font-family: 'Inter';
     margin: 0;
 }
-.content_activity .people_act p{
+.section1_section2_calendar #section_2 .content_activity .people_act p{
     color: #565E6CFF;
     font-size: 11px;
     font-family: 'Inter';
     margin: 0;
 }
-
 /* *********Calendar none********** */ 
 .calendar_none{
     display: none;
@@ -1469,30 +1378,16 @@
         padding: 17px 10px;
     }
     /* ************Calendar********** */ 
-    .calendar{
-        grid-template-columns: 60% 40%;
+    .section1_section2_calendar{
+        grid-template-columns: 60% 40%!important;
     }
-
-    .time_1_section .nine_time_about {
-        margin-top: 40px;
+    .section1_section2_calendar .time_1_section .nine_time_about, .ten_time_about, .eleven_time_about{
+        margin-top: 40px!important;
     }
-    .time_1_section .ten_time_about {
-        margin-top: 40px;
-    }
-    .time_1_section .eleven_time_about {
-        margin-top: 40px;
-    }
-
-    .text_eight .metting_room{
+    .section1_section2_calendar .together_time_container .metting_room{
         flex-direction: column;
         gap: 0;
     }
-    /* .time_1_section .line_border{
-        width: 85%;
-    }
-    .eight_time_about .line_eight_high p, .line_eight_down p, .line_nine_high p, .line_ten_high p, .line_ten_down p, .line_eleven_down p{
-        font-size: 10px!important;
-    } */
 
     /* ********Setting integrations******** */
     .sidebar_tete img{
@@ -1651,15 +1546,13 @@
     }
 
     /* *************Calendar************ */
-    .calendar {
-        grid-template-columns: 100% 0;
-        margin: 0;
+    .section1_section2_calendar{
+        grid-template-columns: 100% 0!important;
+        margin: 0!important;
     }
-
-    .calendar #section_2{
+    .section1_section2_calendar #section_2{
         display: none;
     }
-    
      /* ********Setting integrations******** */
      .container_sidebar{
         display: none;
@@ -1784,8 +1677,8 @@
         font-size: 11px;
     }
     /* **************Calendar************ */
-    .calendar{
-        display: none;
+    .section1_section2_calendar{
+        display: none!important;
     }
     .calendar_none {
         display: block;
