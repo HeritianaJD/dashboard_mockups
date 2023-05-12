@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cal_body">
     <!-- Sidebar -->
     <div class="container_sidebar container_sidebar_setting w3-sidebar   w3-bar-block" style="width:18%">
         <a class="link_dash_page" href="dashboard.html">
@@ -32,10 +32,10 @@
                     <img class="icone_white" src="imgs/folder_white.png" alt="square_white">
                     <a href="#" class="w3-bar-item  ">Projects</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple" src="imgs/icons8-calendar-31-50.png" alt="">
+                <li style="background: #00BDD6FF;border-radius: 4px;" class="list_link_sidebar">
+                    <img class="icone_simple" src="imgs/calendar_white.png" alt="">
                     <img class="icone_white" src="imgs/calendar_white.png" alt="">
-                    <a href="calendar1.html" class="w3-bar-item  ">Calendar</a>
+                    <a style="color: white;" href="calendar.html" class="w3-bar-item  ">Calendar</a>
                 </li>
                 <li class="list_link_sidebar">
                     <img class="icone_simple"  src="imgs/icons8-user-account-50.png" alt="">
@@ -47,9 +47,10 @@
                     <img class="icone_white" src="imgs/Analytec_white-50.png" alt="square_white">
                     <a href="#" class="w3-bar-item  ">Analytics</a>
                 </li>
-                <li style="background: #00BDD6FF;border-radius: 4px;" class="list_link_sidebar">
-                    <img  src="imgs/code_white.png" alt="">
-                    <a style="color: white;" href="setting.html" class="w3-bar-item ">Integrations</a>
+                <li class="list_link_sidebar">
+                    <img class="icone_simple"  src="imgs/icons8-source-code-50.png" alt="">
+                    <img class="icone_white" src="imgs/code_white.png" alt="square_white">
+                    <a href="setting.html" class="w3-bar-item ">Integrations</a>
                 </li>
                 <li class="list_link_sidebar">
                     <img class="icone_simple" src="imgs/icone_mesage.png" alt="">
@@ -143,7 +144,7 @@
                     <p>Wed</p>
                     <button class="background_white">14</button>
                 </div>
-                <div class="day_of_date">
+                <div class="day_of_date thursday_date">
                     <p>Thu</p>
                     <button class="background_white">15</button>
                 </div>
@@ -393,7 +394,7 @@
         </div>
     </section>                   
     </div>
-    <!-- calendar none -->
+    <!-- fichier calendar none -->
     <section class="calendar_none">
         <div>
             <h1>Calendar</h1>
@@ -446,7 +447,77 @@
                     <p>25</p>
                 </div>
             </div>
+            <!-- -->
+            <div class="section_line_none">
+                <div class="section_none">
+                    <div class="together_none_contain text_pariatur1" style="background-color: #F0F8FEFF;margin-left: 12%;width: 224px;">
+                        <img src="imgs/Jane.png" alt="Jane_Avatar_img">
+                        <p class="paragraphe_together_none">Pariatur ex duis</p>
+                    </div>
+                    <div class="together_none_contain text_pariatur2" style="background-color: #F5F2FDFF;margin-left: 30%;width: 224px;">
+                        <img src="imgs/Jane.png" alt="Jane_Avatar_img">
+                        <p class="paragraphe_together_none">Pariatur ex duis</p>
+                    </div>
+                    <div class="together_none_contain text_pariatur3" style="background-color: #FDF2F2FF;width: 305px;margin-left: 8%;">
+                        <div>
+                            <img src="imgs/Elon_Melon.png" alt="Elon_Melon_Avatar_img">
+                            <img src="imgs/Kathryn.png" alt="Kathryn_Avatar_img" style="margin-left: -10px;">
+                        </div>
+                        <p class="paragraphe_together_none">Pariatur ex duis</p>
+                    </div>
+                    <div class="together_none_contain text_consequat" style="background-color: #F0F8FEFF;width: 305px;margin-left: 30%">
+                        <div>
+                            <img src="imgs/Elon_Melon.png" alt="Elon_Melon_Avatar_img">
+                            <img src="imgs/Kathryn.png" alt="Kathryn_Avatar_img" style="margin-left: -10px;">
+                            <img src="imgs/Avatar 2527.png" alt="Avatar_img" style="margin-left: -10px;">
+                        </div>
+                        <p class="paragraphe_together_none">Consequat magma</p>
+                    </div>
+                    <div class="together_none_contain text_pariatur4" style="background-color: #F5F2FDFF;margin-left: 8%;">
+                        <img src="imgs/sergey.png" alt="Sergey_Avatar_img">
+                        <p class="paragraphe_together_none">Pariatur ex duis</p>
+                    </div>
+                    <div class="together_none_contain text_paria" style="background-color: #F1F4FDFF;margin-bottom: 190px;margin-left: 5%;">
+                        <img src="imgs/Jane.png" alt="Jane_Avatar_img">
+                        <p class="paragraphe_together_none">Paria</p>
+                    </div>
+                </div>
+                <div class="line_verticale"></div>
+                <div class="button_plus">
+                    <button><img src="" alt="">+</button>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+    <!-- sidebar_menu_bottom -->
+    <section class="sidebar_menu_bottom">
+        <div class="sidebar_footer">
+            <a href="dashboard.html">
+                <img class="image_simple" src="imgs/four_squares.png" alt="link-dashboard-footer">
+                <img class="image_hover_blue" src="imgs/icons8-four-squares-blue.png" alt="link-dashboard-footer-hover">
+                <p>Dashboard</p>
+            </a>
+            <a href="calendar.html">
+                <img class="image_simple" src="imgs/icons8-calendar-blue.png" alt="link-calendar-footer">
+                <img class="image_hover_blue" src="imgs/icons8-calendar-blue.png" alt="link-calendar-footer-hover">
+                <p style="color: #00BDD6FF;">Calendar</p>
+            </a>
+            <a href="#">
+                <img class="image_simple" src="imgs/icons8-user-account-50.png" alt="link-team-footer">
+                <img class="image_hover_blue" src="imgs/user_acount_blue.png" alt="link-team-footer-hover">
+                <p>Teams</p>
+            </a>
+            <a href="#">
+                <img class="image_simple" src="imgs/icone_mesage.png" alt="link-message-footer">
+                <img class="image_hover_blue" src="imgs/icons8-typing-24-message-blue.png" alt="link-message-footer-hover">
+                <p>Messages</p>
+            </a>
+            <a href="setting.html">
+                <img class="image_simple" src="imgs/icons8-setting-24.png" alt="link-setting-footer">
+                <img class="image_hover_blue" src="imgs/icons8-setting-blue.png" alt="link-setting-footer-hover">
+                <p>Setting</p>
+            </a>
+        </div>
+    </section>
 </body>
 </html>
