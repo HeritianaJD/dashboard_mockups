@@ -1342,7 +1342,6 @@
     border: none;
     border-radius: 3px;
 }
-
 /* +*************Sidebar footer**************** */
 .sidebar_menu_bottom{
     display: none;
@@ -1357,7 +1356,6 @@
     width: 100%;
     padding: 20px;
 }
-
 .sidebar_footer img{
     width: 30px;
 }
@@ -1393,7 +1391,6 @@
 }
 /* +++********************************************************Responsive******************************************************************************************* */
 @media only screen and (max-width: 1116px){
-
     /* ************Dashboard********** */
     .main_dash #section_1{
         gap: 10px;
@@ -1515,7 +1512,6 @@
     .container_registration .group img{
         height: 460px;
     }
-
     /* ********Dashboard********* */
     .main_dash #section_1{
         flex-direction: column;
