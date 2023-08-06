@@ -1,254 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- siderbar menu -->
-    <div class="container_sidebar w3-sidebar   w3-bar-block" style="width:18%">
-        <a class="link_dash_page" href="dashboard.html">
-            <div class="sidebar_tete">
-              <img src="imgs/logo_en_couleur.png" alt="">
-              <div class="text_logos">
-                <h3 class="w3-bar-item">Project name</h3>
-                <p>Category</p>
-              </div>
+    <section id="sidebar">
+        <a class="sidebar-head" href="dashboard.html">
+            <div class="sidebar-content-head">
+                <img src="assets/photos/dashboard/sidebar-logo.png" alt="">
+                <div class="sidebar-head-text">
+                    <h3 class="w3-bar-item">Project name</h3>
+                    <p>Category</p>
+                </div>
             </div>
-          </a>
-          <div class="menu_sidebar ">
+        </a>
+        <div class="sidebar-container ">
             <ul>
-                <li style="background: #00BDD6FF;border-radius: 4px;" class="list_link_sidebar">
-                    <img src="imgs/square_white.png" alt="">
+                <li style="background: #00BDD6FF;border-radius: 4px;" class="sidebar-link-page">
+                    <img src="assets/photos/dashboard/square-white.png" alt="">
                     <a style="color: white;" href="dashboard.html" class="w3-bar-item ">Dashboard</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple"  src="imgs/icons8-folder-50.png" alt="">
-                    <img class="icone_white" src="imgs/folder_white.png" alt="square_white">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/project.png" alt="">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/project-white.png" alt="square_white">
                     <a href="#" class="w3-bar-item  ">Projects</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple" src="imgs/icons8-calendar-31-50.png" alt="">
-                    <img class="icone_white" src="imgs/calendar_white.png" alt="">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/calendar.png" alt="">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/calendar-white.png" alt="">
                     <a href="calendar.html" class="w3-bar-item  ">Calendar</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple"  src="imgs/icons8-user-account-50.png" alt="">
-                    <img class="icone_white" src="imgs/user_account_white.png" alt="square_white">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/user-acount.png" alt="">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/user-acount-white.png"
+                        alt="square_white">
                     <a href="#" class="w3-bar-item  ">Teams</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple" src="imgs/Analystec.png" alt="">
-                    <img class="icone_white" src="imgs/Analytec_white-50.png" alt="square_white">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/analystec.png" alt="">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/analustec-white.png"
+                        alt="square_white">
                     <a href="#" class="w3-bar-item  ">Analytics</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple"  src="imgs/icons8-source-code-50.png" alt="">
-                    <img class="icone_white" src="imgs/code_white.png" alt="square_white">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/code.png" alt="">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/code-white.png" alt="square_white">
                     <a href="setting.html" class="w3-bar-item ">Integrations</a>
                 </li>
-                <li class="list_link_sidebar">
-                    <img class="icone_simple" src="imgs/icone_mesage.png" alt="">
-                    <img class="icone_white" src="imgs/message_white-32.png" alt="square_white">
+                <li class="sidebar-link-page">
+                    <img class="sidebar-icone-simple" src="assets/photos/dashboard/message.png" alt="icone-message.png">
+                    <img class="sidebar-icone-hover" src="assets/photos/dashboard/message-white.png"
+                        alt="icone-message-white.png">
                     <a href="#" class="w3-bar-item  ">Messages</a>
                 </li>
             </ul>
-          </div>
-          <div  class="container_sergey">
-            <img  src="imgs/sergey.png" alt="">
-            <div class="portf">
-              <h1>Sergey Goldberg</h1>
-              <p>company@example.com</p>
-            </div>
-          </div>
-    </div>
-    <!-- detail du page -->
-    <header class="header_dash">
-        <h1>Dashboard</h1>
-        <div class="header_button">
-          <div class="two_button_header">
-            <button class="create_button"><img src="imgs/icons8-plus-math-24.png" alt="">Creat new project</button>
-            <button class="blue_button"><img src="imgs/icons8-share-48.png" alt="">Share</button>
-          </div>
-          <img class="image_menu" src="imgs/menu_button.png" alt="">
         </div>
-    </header>
-    <!-- main -->
-    <main class="main_dash">
-        <!-- section_1 -->
-        <section id="section_1">
-            <!-- data_and_stat -->
-            <div class="data_and_stat">
-                <!-- container data -->
-                <div class="container_data">
-                    <div class="label_d" style="background-color: #F5F2FDFF;">
-                        <p>Data label</p>
-                        <h1>6,452</h1>
-                        <h3 style="color: #14923EFF;"><img width="12px" src="imgs/Caret up extra_green.png" alt=""> 5.39%</h3>
-                    </div>
-                    <div class="label_d" style="background-color: #F1F4FDFF;">
-                        <p>Data label</p>
-                        <h1>42,502</h1>
-                        <h3 style="color: #F22128FF;"><img width="12px" src="imgs/Caret up extra 5_red.png" alt=""> 0.65%</h3>
-                    </div>
-                    <div class="label_d label_d3" style="background-color: #FEF6F1FF;">
-                        <p>Data label</p>
-                        <h1>56,201</h1>
-                        <h3 style="color: #14923EFF;"><img width="12px" src="imgs/Caret up extra_green.png" alt=""> 2.29%</h3>
-                    </div>
-                </div>
-                <!-- container stat -->
-                <div class="container_stat">
-                    <div class="stat_text">
-                        <h1>Statistics</h1>
-                        <form action="">
-                            <select name="date" id="date">
-                                <option value="date">2022</option>
-                                <option value="date">2023</option>
-                                <option value="date">2024</option>
-                                <option value="date">2025</option>
-                                <option value="date">2026</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="stat_image">
-                        <img width="724px" src="imgs/Column bar chart 11.png" alt="Culumn_Bar_Chart">
-                    </div>
-                    <div class="stat_chiffre">
-                        <div class="chiffre_1-12">1</div>
-                        <div class="chiffre_1-12">2</div>
-                        <div class="chiffre_1-12">3</div>
-                        <div class="chiffre_1-12">4</div>
-                        <div class="chiffre_1-12">5</div>
-                        <div class="chiffre_1-12">6</div>
-                        <div class="chiffre_1-12">7</div>
-                        <div class="chiffre_1-12">8</div>
-                        <div class="chiffre_1-12">9</div>
-                        <div class="chiffre_1-12">10</div>
-                        <div class="chiffre_1-12">11</div>
-                        <div class="chiffre_1-12">12</div>
-                    </div>
-                </div>
-                <!-- -----stat_block_none------- -->
-                <div class="stat_block_none">
-                    <div class="stat_text_block">
-                      <h1>Statistics</h1>
-                      <form action="">
-                        <select name="date" id="date">
-                          <option value="date">2022</option>
-                          <option value="date">2023</option>
-                          <option value="date">2024</option>
-                          <option value="date">2025</option>
-                          <option value="date">2026</option>
-                        </select>
-                      </form>
-                    </div>
-                    <div">
-                      <img width="100%" src="imgs/Column bar chart-2.png" alt="">
-                    </div>
-                  </div>
+        <div class="sidebar-sergey">
+            <img src="assets/photos/dashboard/sergey.png" alt="">
+            <div class="sidebar-sergey-text">
+                <h1>Sergey Goldberg</h1>
+                <p>company@example.com</p>
             </div>
-            <!-- container activitie -->
-            <div class="container_activitie">
-                <!-- activitie block -->
-                <div class="activitie_block">
-                    <div class="header_act">
-                        <div>
-                            <h1>Activities</h1>
-                        </div>
-                        <div>
-                            <img src="imgs/icons8-calendar-act.png" alt="">
-                            <select name="" id="">
-                                <option value=""> Monthly</option>
-                                <option value="date">2022</option>
-                                <option value="date">2023</option>
-                                <option value="date">2024</option>
-                                <option value="date">2025</option>
-                                <option value="date">2026</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="content_act">
-                        <div class="act_list">
-                            <img width="42px" height="42px" src="imgs/Kathryn.png" alt="">
-                            <div>
-                                <h3>Kathryn Murphy</h3>
-                                <p>ln eu do do cillum lorem exercitation ea dolor.</p>
-                            </div>
-                        </div>
-                        <div class="act_list">
-                            <img width="42px" height="42px" src="imgs/Harrid_James.png" alt="">
-                            <div>
-                                <h3>James Harid</h3>
-                                <p>Deserunt minim indidunt cillum nostrudo voluptate excepteur.</p>
-                            </div>
-                        </div>
-                        <div class="act_list">
-                            <img width="42px" height="42px" src="imgs/Elon_Melon.png" alt="">
-                            <div>
-                                <h3>Elon Melon</h3>
-                                <p>Mollit consectetur occaecat et ad adipisicing ex deserunt fugiat.</p>
-                            </div>
-                        </div>
-                        <div class="act_list">
-                            <img width="42px" height="42px" src="imgs/Mia_Smith.png" alt="">
-                            <div>
-                                <h3>Mia Smith</h3>
-                                <p>Cupidatat eiusm d tempor labore amet amet proid nt duis.</p>
-                            </div>
-                        </div>
-                        <div class="act_list">
-                            <img width="42px" height="42px" src="imgs/james_doe.png" alt="">
-                            <div>
-                                <h3>James Doe</h3>
-                                <p>Duis excepteur enim enim dolore aliqua officia nisi labore ipsum. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- activitie none -->
-                <div class="activitie_none">
-                    <div class="container_act_none">
-                        <div class="header_act_none">
-                            <h1>Activities</h1>
-                            <p>See all</p>
-                        </div>
-                        <div class="content_act_none">
-                            <div style="margin-bottom: 15px;" class="act_list_houre">
-                                <div class="act_list_none">
-                                    <img src="imgs/Jane.png" alt="">
-                                    <div>
-                                        <h4>Jane Cooper</h4>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                                <div class="houre">12:00 PM</div>
-                            </div>
-                            <div class="act_list_houre">
-                                <div class="act_list_none">
-                                    <img src="imgs/Avatar 2529.png" alt="">
-                                    <div>
-                                        <h4>James Hariid</h4>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                                <div class="houre">11:37 PM</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <section id="dashboard">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="create-share">
+                <button class="header-create"><img src="assets/photos/dashboard/plus.png" alt="image-create-button">Create new project</button>
+                <button class="header-share"><img src="assets/photos/dashboard/share-dashboard.png" alt="image-share-button"> Share</button>
             </div>
-        </section>
-        <!-- section_2 -->
-        <section id="section_2">
-            <!-- container order -->
-            <div class="container_order">
-                    <h1>Recent Orders</h1>
-                    <div class="content_recent_order">
+            <button class="button-menu-responsive">
+                <img src="assets/photos/dashboard/menu-button.png" alt="menu-button">
+            </button>
+        </header>
+        <main>
+            <section class="dashboard-section1">
+                <div class="dashboard-data-stat">
+                    <div class="dashboard-data">
+                        <div class="data-grid data-grid1">
+                            <p>Data label</p>
+                            <h2>6,452</h2>
+                            <div class="data-button"><button>▲</button>5.39%</div>
+                        </div>
+                        <div class="data-grid data-grid2">
+                            <p>Data label</p>
+                            <h2>42,502</h2>
+                            <div class="data-button"><button>▼</button>0.65%</div>
+                        </div>
+                        <div class="data-grid data-grid3">
+                            <p>Data label</p>
+                            <h2>56,201</h2>
+                            <div class="data-button"><button>▲</button>2.29%</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-statistic">
+                        <div class="statistic-head">
+                            <h2>Statistics</h2>
+                            <form action="">
+                                <select name="date" id="date">
+                                    <option value="date">2022</option>
+                                    <option value="date">2023</option>
+                                    <option value="date">2024</option>
+                                    <option value="date">2025</option>
+                                    <option value="date">2026</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="statistic-container">
+                            <div class="statistic-image">
+                                <div>
+                                    <img class="column-bar-chart1" src="assets/photos/dashboard/bar-chart1.png" alt="column-bar-chart">
+                                    <img class="column-bar-chart2" src="assets/photos/dashboard/column-bar chart-2.png" alt="column-bar-chart">
+                                </div>
+                                <div class="statistic-numbers">
+                                    <div class="stat-number-content">1</div>
+                                    <div class="stat-number-content">2</div>
+                                    <div class="stat-number-content">3</div>
+                                    <div class="stat-number-content">4</div>
+                                    <div class="stat-number-content">5</div>
+                                    <div class="stat-number-content">6</div>
+                                    <div class="stat-number-content">7</div>
+                                    <div class="stat-number-content">8</div>
+                                    <div class="stat-number-content">9</div>
+                                    <div class="stat-number-content">10</div>
+                                    <div class="stat-number-content">11</div>
+                                    <div class="stat-number-content">12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-recent-order">
+                    <h2>Recent Orders</h2>
+                    <div class="recent-order-container">
                         <table>
                             <tr>
                                 <th>Product</th>
@@ -263,111 +159,212 @@
                                 <td>300</td>
                                 <td>2</td>
                                 <td>$600</td>
-                                <td><button class="buton_new button" style="background: #F0F8FEFF;color: #1091F4FF;">New</button></td>
-                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>
+                                <td class="recent-td-blue">
+                                    <button>New</button>
+                                </td>
+                                <td class="recent-button-dots">
+                                    <button><img src="assets/photos/dashboard/dots-three-vertical.png"
+                                            alt="dots-three-vertical"></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Product name</td>
                                 <td>300</td>
                                 <td>3</td>
                                 <td>$900</td>
-                                <td><button class="button_delivred button" style="background: #F0F8FEFF;color: #117B34FF">Delivred</button></td>
-                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>
+                                <td class="recent-td-green">
+                                    <button>Delivred</button>
+                                </td>
+                                <td class="recent-button-dots">
+                                    <button><img src="assets/photos/dashboard/dots-three-vertical.png"
+                                            alt="dots-three-vertical"></button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Product name</td>
                                 <td>500</td>
                                 <td>2</td>
                                 <td>$1000</td>
-                                <td><button class="buton_new button" style="background: #F0F8FEFF;color: #1091F4FF;">New</button></td>
-                                <td><button class="icone" style="text-align: center;"><img width="22px" height="22px" src="imgs/Dots three vertical 73.png" alt="Image_vertical_menu"></button></td>  
-                            </tr>                          
+                                <td class="recent-td-blue">
+                                    <button>New</button>
+                                </td>
+                                <td class="recent-button-dots">
+                                    <button><img src="assets/photos/dashboard/dots-three-vertical.png"
+                                            alt="dots-three-vertical"></button>
+                                </td>
+                            </tr>
                         </table>
                     </div>
-                    <!-- container_order_none -->
-                    <div class="container_order_none">
-                        <div class="content_order_none">
-                            <div class="list_order_none">
-                                <div class="img_and_parg_order">
-                                    <img width="24px" height="24px" src="imgs/Receipt_3.png" alt="">
-                                    <p>6 orders <em>to fulfill</em></p>
+                </div>
+            </section>
+            <section id="recent-activity-none">
+                <div class="dashboard-activity-none">
+                    <div class="activity-head-none">
+                        <h1>Activities</h1>
+                        <p>See all</p>
+                    </div>
+                    <div class="activity-container-none">
+                        <div class="activity-none-avatar">
+                            <div class="description-avatar-none">
+                                <img src="assets/photos/dashboard/jane.png" alt="photo-avatar">
+                                <div>
+                                    <h4>Jane Cooper</h4>
+                                    <p>Exercitation cillium ut qui nulla</p>
                                 </div>
-                                <button>
-                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
-                                </button>
                             </div>
-                            <hr>
-                            <div class="list_order_none">
-                                <div class="img_and_parg_order">
-                                    <img width="24px" height="24px" src="imgs/Clipboard_text5.png" alt="Clipboard_text">
-                                    <p>20 orders <em>on delivery</em></p>
+                            <div class="houre-avatar-none">12:00 PM</div>
+                        </div>
+                        <div class="activity-none-avatar">
+                            <div class="description-avatar-none">
+                                <img src="assets/photos/calendar/avatar3.png" alt="photo-avatar">
+                                <div>
+                                    <h4>James Harrid</h4>
+                                    <p>Incididuant ad consequant deserunt</p>
                                 </div>
-                                <button>
-                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
-                                </button>
                             </div>
-                            <hr>
-                            <div class="list_order_none">
-                                <div class="img_and_parg_order">
-                                    <img width="24px" height="24px" src="imgs/Credit_card_6.png" alt="Credit_card">
-                                    <p>99 payments <em>to capture</em></p>
-                                </div>
-                                <button>
-                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
-                                </button>
+                            <div class="houre-avatar-none">11:37 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-recent-none">
+                    <h1>Recent orders</h1>
+                    <div class="container-recent-none">
+                        <div class="list-order-none">
+                            <div class="order-list-text">
+                                <img src="assets/photos/dashboard/recent-none1.png" alt="image-recent-order-none">
+                                <p>6 orders <em>to fulfill</em></p>
                             </div>
-                            <hr>
-                            <div class="list_order_none">
-                                <div class="img_and_parg_order">
-                                    <img width="24px" height="24px" src="imgs/Clipboard_text-6.png" alt="Clipboard_text">
-                                    <p>1 chargeback <em>to review</em></p>
-                                </div>
-                                <button>
-                                    <img width="15px" src="imgs/Caret_right_9.png" alt="icone_right_caret">
-                                </button>
+                            <button class="button-order-none">
+                                <img src="assets/photos/dashboard/caret-rigth.png" alt="icone-caret-right">
+                            </button>
+                        </div>
+                        <hr>
+                        <div class="list-order-none">
+                            <div class="order-list-text">
+                                <img src="assets/photos/dashboard/clipboard1.png" alt="image-recent-order-none">
+                                <p>20 orders <em>on delivery</em></p>
+                            </div>
+                            <button class="button-order-none">
+                                <img src="assets/photos/dashboard/caret-rigth.png" alt="icone-caret-right">
+                            </button>
+                        </div>
+                        <hr>
+                        <div class="list-order-none">
+                            <div class="order-list-text">
+                                <img src="assets/photos/dashboard/clipboard2.png" alt="image-recent-order-none">
+                                <p>99 payments <em>to capture</em></p>
+                            </div>
+                            <button class="button-order-none">
+                                <img src="assets/photos/dashboard/caret-rigth.png" alt="icone-caret-right">
+                            </button>
+                        </div>
+                        <hr>
+                        <div class="list-order-none">
+                            <div class="order-list-text">
+                                <img src="assets/photos/dashboard/credit-card.png" alt="image-recent-order-none">
+                                <p>1 chargeback <em>to review</em></p>
+                            </div>
+                            <button class="button-order-none">
+                                <img src="assets/photos/dashboard/caret-rigth.png" alt="icone-caret-right">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="activity-segment">
+                <div class="dashboard-activity">
+                    <div class="activity-head">
+                        <h2>Activities</h2>
+                        <form action="">
+                            <img src="assets/photos/dashboard/icone-monthly.png" alt="icone-calendar">
+                            <select name="date" id="date">
+                                <option value="date">Monthly</option>
+                                <option value="date">Monthly</option>
+                                <option value="date">Monthly</option>
+                                <option value="date">Monthly</option>
+                                <option value="date">Monthly</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="activity-container">
+                        <div class="activity-column">
+                            <img src="assets/photos/dashboard/kathryn.png" alt="kathryn-avatar">
+                            <div class="activity-description-avatar">
+                                <h5>Kathryn Murphy</h5>
+                                <p>ln eu do do cillum lorem exercitation ea dolor.</p>
                             </div>
                         </div>
-                    </div>   
-            </div>
-            <!-- container segment -->
-            <div class="container_segment">
-                <div class="content_segment">
-                    <h1>Statistics</h1>
-                    <p>From 1-15 June, 2022</p>
-                    <img  src="imgs/Pie chart 3.png" alt="Pie_Chart">
+                        <div class="activity-column">
+                            <img src="assets/photos/dashboard/harrid-james.png" alt="photo-avatar">
+                            <div class="activity-description-avatar">
+                                <h5>James Harid</h5>
+                                <p>Deserunt minim indidunt cillum nostrudo voluptate excepteur.</p>
+                            </div>
+                        </div>
+                        <div class="activity-column">
+                            <img src="assets/photos/dashboard/elon-melon.png" alt="photo-avatar">
+                            <div class="activity-description-avatar">
+                                <h5>Elon Melon</h5>
+                                <p>Mollit consectetur occaecat et ad adipisicing ex deserunt fugiat.</p>
+                            </div>
+                        </div>
+                        <div class="activity-column">
+                            <img src="assets/photos/dashboard/mia-smith.png" alt="photo-avatar">
+                            <div class="activity-description-avatar">
+                                <h5>Mia Smith</h5>
+                                <p>Cupidatat eiusm d tempor labore amet amet proid nt duis.</p>
+                            </div>
+                        </div>
+                        <div class="activity-column">
+                            <img src="assets/photos/dashboard/james-doe.png" alt="photo-avatar">
+                            <div class="activity-description-avatar">
+                                <h5>James Doe</h5>
+                                <p>Duis excepteur enim enim dolore aliqua officia nisi labore ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <!-- sidebar_menu_bottom -->
-    <section class="sidebar_menu_bottom">
-        <div class="sidebar_footer">
-            <a href="dashboard.html">
-                <img class="image_simple" src="imgs/icons8-four-squares-blue.png" alt="link-dashboard-footer">
-                <img class="image_hover_blue" src="imgs/icons8-four-squares-blue.png" alt="link-dashboard-footer-hover">
-                <p style="color: #00BDD6FF;">Dashboard</p>
-            </a>
-            <a href="calendar.html">
-                <img class="image_simple" src="imgs/icons8-calendar-footer.png" alt="link-calendar-footer">
-                <img class="image_hover_blue" src="imgs/icons8-calendar-blue.png" alt="link-calendar-footer-hover">
-                <p>Calendar</p>
-            </a>
-            <a href="#">
-                <img class="image_simple" src="imgs/icons8-user-account-50.png" alt="link-team-footer">
-                <img class="image_hover_blue" src="imgs/user_acount_blue.png" alt="link-team-footer-hover">
-                <p>Teams</p>
-            </a>
-            <a href="#">
-                <img class="image_simple" src="imgs/icone_mesage.png" alt="link-message-footer">
-                <img class="image_hover_blue" src="imgs/icons8-typing-24-message-blue.png" alt="link-message-footer-hover">
-                <p>Messages</p>
-            </a>
-            <a href="setting.html">
-                <img class="image_simple" src="imgs/icons8-setting-24.png" alt="link-setting-footer">
-                <img class="image_hover_blue" src="imgs/icons8-setting-blue.png" alt="link-setting-footer-hover">
-                <p>Setting</p>
-            </a>
-        </div>
+                <div class="dashboard-segment">
+                    <h1>Statistics</h1>
+                    <div class="segment-container">
+                        <div>
+                            <h2>Statistics</h2>
+                            <p>From 1-15 June, 2022</p>
+                        </div>
+                        <img src="assets/photos/dashboard/pie-chart.png" alt="Pie-chart-statistics">
+                    </div>
+                    <div class="segement-container-none"></div>
+                </div>
+            </section>
+        </main>
     </section>
+    <div class="sidebar-footer">
+        <a href="dashboard.html">
+            <img class="icone-simple-footer" src="assets/photos/dashboard/icone-square-blue.png" alt="icone-dashboard">
+            <img class="icone-white-blue" src="assets/photos/dashboard/icone-square-blue.png" alt="icone-square-hover">
+            <p style="color: #00BDD6FF">Dashboard</p>
+        </a>
+        <a href="calendar.html">
+            <img class="icone-simple-footer" src="assets/photos/dashboard/calendar.png" alt="icone-dashboard">
+            <img class="icone-white-blue" src="assets/photos/dashboard/icons8-calendar-blue.png" alt="icone-square-hover">
+            <p>Calendar</p>
+        </a>
+        <a href="dashboard.html">
+            <img class="icone-simple-footer" src="assets/photos/dashboard/user-acount.png" alt="icone-dashboard">
+            <img class="icone-white-blue" src="assets/photos/dashboard/user-blue-footer.png" alt="icone-square-hover">
+            <p>Teams</p>
+        </a>
+        <a href="dashboard.html">
+            <img class="icone-simple-footer" src="assets/photos/dashboard/message.png" alt="icone-dashboard">
+            <img class="icone-white-blue" src="assets/photos/dashboard/message-blue-footer.png" alt="icone-square-hover">
+            <p>Messages</p>
+        </a>
+        <a href="setting.html">
+            <img class="icone-simple-footer" src="assets/photos/dashboard/setting-footer.png" alt="icone-dashboard">
+            <img class="icone-white-blue" src="assets/photos/dashboard/setting-blue-footer.png" alt="icone-square-hover">
+            <p>Settings</p>
+        </a>
+    </div>
 </body>
+
 </html>

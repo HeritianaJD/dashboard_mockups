@@ -1,0 +1,429 @@
+@font-face{
+    font-family: 'Epilogue';
+    src: url(../fonts/epilogue/static/Epilogue-Bold.ttf),
+        url(../fonts/epilogue/static/Epilogue-ExtraLight.ttf),
+        url(../fonts/epilogue/static/Epilogue-LightItalic.ttf),
+        url(../fonts/epilogue/static/Epilogue-Medium.ttf);
+    }
+
+@font-face{
+    font-family: 'Inter';
+    src: url(../fonts/inter/static/Inter-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-setting{
+    height: 96vh!important;
+    width: 16%!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0!important;
+}
+
+.setting{
+    margin-left: 18%;
+    padding: 48px 56px;
+}
+
+#setting-section1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-tablet img{
+    width: 300px;
+}
+
+.setting-used-credit img{
+    width: 193px; 
+}
+
+.title-connected h1{
+    font-size: 24px; 
+    line-height: 36px; 
+    color: #171A1FFF;
+    font-family: 'Epilogue';
+}
+
+.title-connected p{
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #6E7787FF;
+    font-family: 'Inter';
+}
+
+.setting-connected-apps{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.setting-tablet{
+    display: flex;
+    gap: 28px;
+}
+
+.setting-tablet-text{
+    padding-top: 30px;
+}
+.setting-tablet-text h3{
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #323842FF;
+    font-family: 'Inter';
+}
+.setting-tablet-text p{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #6E7787FF;
+    font-family: 'Inter';
+}
+
+.setting-button-connected{
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.setting-button-connected button{
+    width: fit-content;
+}
+.dismiss-button-connected{
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #9095A0FF;
+    font-family: 'Inter';
+    background: #00000000; 
+    border-radius: 3px;
+    border: 1px #9095A0FF solid;
+    padding: 6px 20px;
+}
+.dismiss-button-connected:hover{
+    color: #6E7787FF;
+}
+.dismiss-button-connected:active{
+    color: #565E6CFF;
+}
+.update-button-connected{
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #FFFFFFFF; 
+    background: #00BDD6FF;
+    border: none; 
+    border-radius: 3px;
+    font-family: 'Inter';
+    padding: 6px 20px;
+}
+.update-button-connected:hover{
+    background: #00A9C0FF;
+}
+.update-button-connected:active{
+    background: #0095A9FF;
+}
+
+.setting-used-credit{
+    max-width: 26%;
+    padding: 38px 15px 20px 15px;
+    border-radius: 8px; 
+    border: 1px #F3F4F6FF solid;
+    text-align: center;
+}
+.setting-used-credit img{
+    width: 70%;
+}
+
+.used-credit-text{
+    margin-top: -32px;
+}
+.used-credit-text h3{
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #171A1FFF;
+    font-family: 'Epilogue';
+}
+.used-credit-text p{
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #424955FF;
+    font-family: 'Inter';
+}
+
+.setting-button-used{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.setting-button-used button{
+    width: fit-content;
+}
+
+.dismiss-button-used{
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #9095A0FF;
+    font-family: 'Inter';
+    background: #00000000; 
+    border-radius: 3px;
+    border: 1px #9095A0FF solid;
+    padding: 8px;
+}
+.dismiss-button-used:hover{
+    background: #F3F4F6FF;
+}
+.dismiss-button-used:active{
+    background: #DEE1E6FF;
+}
+.update-button-used{
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #8353E2FF;
+    background: #F5F2FDFF;
+    border: none; 
+    border-radius: 3px;
+    font-family: 'Inter';
+    padding: 8px;
+}
+.update-button-used:hover{
+    background: #E7DEF9FF;
+}
+.update-button-used:active{
+    background: #D9CBF6FF;
+}
+
+.pourcentage-used-credit{
+    font-size: 24px; 
+    line-height: 36px; 
+    color: #8353E2FF;
+    font-family: 'Epilogue';
+    margin-bottom: 24px;
+}
+
+.setting-network{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.setting-social-media{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.setting-social-media img{
+    width: 44px;
+    height: 44px;
+}
+.social-media-text h4{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #171A1FFF;
+    font-family: 'Inter';
+}
+.social-media-text p{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #6E7787FF;
+    font-family: 'Inter';
+}
+
+.social-media-connected{
+    display: flex!important;
+    gap: 25px!important;
+    align-items: center!important;
+}
+.social-media-connected p{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #323842FF;
+}
+
+.social-media-connected p{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #323842FF;
+    font-family: 'Inter';
+}
+
+.setting-network{
+    border-top:  1px solid #F3F4F6FF;
+}
+.twitter-setting-network{
+    border-top: none;
+}
+
+.used-credit-none{
+    display: none;
+}
+
+.prev-icone-none{
+    display: none;
+}
+
+.switch-label {
+    display: inline-block;
+    width: 43px;
+    height: 24px;
+    background: #BCC1CAFF;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-label::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: left 0.3s;
+}
+  
+.switch-input:checked + .switch-label {
+    background: #00BDD6FF;
+}
+  
+.switch-input:checked + .switch-label::before {
+    left: calc(100% - 22px);
+}
+
+@media (max-width:1250px) {
+    .setting-button-connected{
+        flex-direction: column;
+    }
+    .setting-button-used{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:992px) {
+    .setting{
+        margin-left: 0;
+        padding: 22px 22px 100px 22px;
+    }
+
+    .used-credit-none{
+        display: block;
+    }
+
+    .used-credit-none{
+        border-radius: 8px;
+        background: #F8F9FAFF;
+        padding: 20px 16px 16px 16px;
+        border: #F3F4F6FF 1px solid;
+        display: flex;
+        gap: 12px;
+    }
+
+    .pourcentage-none{
+        font-size: 24px; 
+        line-height: 36px; 
+        color: #8353E2FF;
+        font-family: 'Epilogue';
+    }
+
+    .used-credit-text-none{
+        font-size: 16px; 
+        line-height: 26px; 
+        color: #171A1FFF; 
+        font-family: 'Epilogue';
+    }
+    .used-credit-text-none p{
+        font-size: 12px; 
+        line-height: 20px; 
+        color: #424955FF; 
+        margin: 5px 0 11px 0;
+    }
+
+    .setting-used-credit{
+        display: none;
+    }
+
+    .setting-tablet{
+        display: none;
+    }
+
+    .prev-icone-none{
+        display: block;
+    }
+
+    .prev-icone-none{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        background: transparent;
+        border: none;
+        border-radius: 4px;
+    }
+    .prev-icone-none:hover{
+        background: #EAECEFFF;
+    }
+    .prev-icone-none:active{
+        background: #DEE1E6FF;
+    }
+
+    .prev-icone-none img{
+        width: 36px; 
+        height: 36px; 
+    }
+
+    .title-connected{
+        display: flex;
+        gap: 12px;
+    }
+
+    .button-used-none{
+        display: flex;
+        gap: 10px;
+    }
+    .button-used-none .dismiss-button-used{
+        background: #FFFFFFFF;
+        font-size: 12px; 
+        line-height: 20px; 
+        color: #323842FF;
+        border: none; 
+        border-radius: 3px;
+        border: none; 
+        border-radius: 3px;
+        font-family: 'Inter';
+    }
+    .button-used-none .update-button-used{
+        font-size: 12px; 
+        line-height: 20px; 
+        color: #8353E2FF; 
+        background: #F5F2FDFF;
+        font-family: 'Inter';
+    }
+
+    #setting-section2{
+        padding-top: 20px;
+    }
+
+    #setting-section1{
+        padding-bottom: 14px;
+        border-bottom: #F3F4F6FF 1px solid;
+    }
+}
+
+@media (max-width:576px) {
+    .social-media-connected p{
+        display: none;
+    }
+}
+

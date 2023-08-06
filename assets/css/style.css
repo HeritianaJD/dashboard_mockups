@@ -1,0 +1,248 @@
+@font-face{
+    font-family: 'Epilogue';
+    src: url(../font/epilogue/static/Epilogue-Bold),
+        url(../font/epilogue/static/Epilogue-ExtraLight),
+        url(../font/epilogue/static/Epilogue-LightItalic),
+        url(../font/epilogue/static/Epilogue-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url(../font/Inter/static/Inter-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+.div_logo .image{
+    position: relative;
+    top: 30px;
+    left: 40px;
+    width: 130px;
+    height: 42px;
+}
+
+.body_regist{
+    margin: 0;
+}
+
+.contenu_registration{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+/* *** */
+.group img{
+    position: relative;
+    top: 78px!important;
+    width: 440px;
+    height: 511px;
+    width: 100%;
+}
+/* *** */
+.container_form{
+    background-color: white;
+    width: 385px;
+    height: 480px;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.container_form .creation_account{
+    text-align: center;
+}
+
+.container_input{
+    padding: 20px 40px 0 40px;
+}
+/* *** */
+.container_form .button{
+    text-align: center;
+}
+
+.button img{
+    width: 20px;
+    height: 20px;
+}
+
+.button button{
+    background-color: rgb(192, 216, 214, 212, 211);
+    border: none;
+    padding: 4px 22px;
+    border-radius: 26px;
+    margin-top: 20px;
+}
+
+/* *** */
+.creation_account h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    font-family: 'Epilogue';
+}
+.creation_account p{
+    font-size: 11px;
+    margin: 0;
+    font-family: 'Inter';
+    color: #9095A0FF;
+}
+
+/* ****** */
+
+.div_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.div_input input{
+    height: 35px;
+    font-size: 14px;
+    background: #F3F4F6FF;
+    border-radius: 22px;
+    border: none;
+    padding-left: 15px;
+    outline: none;
+}
+.div_input label{
+    font-size: 14px;
+    font-family: 'Inter';
+    color: rgb(98 94 94);
+}
+
+/* **** */
+.container_form .paragraphe{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 13px;
+}
+
+.paragraphe p{
+    color: #323842FF;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+/* div_button_sign */
+.div_button_sign{
+    text-align: center;
+    margin-top: 20px;
+}
+.div_button_sign button{
+    width: 100%;
+    padding: 12px 0;
+    color: #FFFFFFFF; /* white */
+    background: #00BDD6FF;
+    border-radius: 26px;
+    border: none;
+    font-size: 15px;
+}
+
+.div_button_sign button:hover{
+    cursor: pointer;
+}
+
+/* paragraphe */
+
+.container_form .paragraphe a{
+    color: #00BDD6FF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px){
+    .div_logo .image{
+        left: 20px;
+    }
+    .contenu_registration{
+        max-width: 95%;
+    }
+    .container_registration .group img{
+        height: 460px;
+    }
+}
+
+@media (max-width:900px) {
+    .container_registration .group img{
+        height: 420px;
+    }
+
+    #section_integ2 {
+        padding: 0 42px 10px 42px;
+    }
+}
+
+@media (max-width:880px) {
+    .container_registration .group img{
+        height: 400px;
+    }
+}
+@media(max-width: 860px){
+    .container_registration .group img{
+        height: 360px;
+    }
+}
+@media (max-width:768px) {
+    .div_logo .image{
+        width: 110px;
+        height: 36px;
+    }
+    .container_registration .group img{
+        display: none;
+    }
+    .container_form{
+        margin: auto;
+        margin-top: 60px;
+    }
+}
+@media (max-width:420px) {
+    .div_logo .image{
+        top: 24px;
+        width: 30%;
+        height: auto;
+    }
+    .container_registration .group img{
+        display: block;
+        height: auto;
+        width: 45%;
+        left: 55%;
+    }
+    .container_registration .group{
+        margin-top: -95px;
+    }
+    .contenu_registration {
+        display: inline-block;
+    }
+    .container_form{
+        position: absolute;
+        width: 100%;
+        margin-top: 54px;
+        height: 80%;
+    }
+    
+    .container_input{
+        padding: 20px 25px 0 25px;
+    }
+    .button button{
+        padding: 5px 7px;
+        margin: 20px 10px 0 10px;
+    }
+    .div_input{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:290px) {
+    .div_logo .image{
+        top: 18px;
+    }
+}
+@media (max-width:250px) {
+    .container_form{
+        margin-top: 62px;
+    }
+    .div_logo .image{
+        top: 12px;
+    }
+}
