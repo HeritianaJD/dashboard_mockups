@@ -28,7 +28,7 @@
 .contenu_registration{
     display: flex;
     justify-content: space-between;
-    width: 88%;
+    width: 89%;
     margin: auto;
     margin-top: 35px;
     bottom: 0;
@@ -156,6 +156,53 @@
     text-decoration: none;
 }
 
+.oval1-registration{
+    background: #8353E24D;
+    width: 662px;
+    height: 662px;
+    border-radius: 50%;
+    position: absolute;
+    top: -77px;
+    left: -344px;
+    z-index: -2;
+}
+.oval2-registration{
+    /* width: 551px;
+    height: 551px;
+    background: #8353E24D;
+    position: absolute;
+    top: -208px;
+    right: 0;
+    border-radius: 50%;
+    z-index: -2; */
+}
+.oval2-registration img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+.rectangle-registration{
+    width: 682px;
+    height: 176px;
+    background: #8353E24D;
+    border-radius: 8px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+/* background: #8353E24D;
+    width: 662px;
+    height: 662px;
+    border-radius: 50%;
+    position: absolute;
+    top: -77px;
+    left: -344px;
+    z-index: -2; */
+
 @media (max-width: 1366px){
     .group img {
         width: 460px;
@@ -194,6 +241,10 @@
     .div_logo .image{
         width: 95px;
     }
+
+    .oval2-registration img {
+        display: none;
+    }
 }
 
 @media (max-width:576px) {
@@ -222,6 +273,16 @@
 
     .container_form .button {
         gap: 20px;
+    }
+
+    .rectangle-registration{
+        display: none;
+    }
+
+    .oval1-registration{
+        width: 570px;
+        height: 420px;
+        left: -365px;
     }
 }
 @media (max-width:420px) {
